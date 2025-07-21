@@ -1,0 +1,53 @@
+[project]
+name = "evolveprover"
+version = "0.1.0"
+description = "AI Mathematical Reasoning Enhancement System using Evolutionary Optimization"
+authors = [
+    {name = "Ishan", email = "ishan.dbgt@gmail.com"}
+]
+dependencies = [
+    # Core ML & Inference
+    "llama-cpp-python>=0.2.0",
+    "huggingface-hub>=0.20.0",
+    
+    # Mathematical & Scientific
+    "datasets>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "sympy>=1.12",
+    
+    # OpenEvolve Framework
+    "openai>=1.0.0",
+    
+    # Development Tools
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0",
+    "jupyter>=1.0.0",
+    "matplotlib>=3.7.0",
+    
+    # Testing
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88

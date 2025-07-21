@@ -1,0 +1,26 @@
+# Core ML & Inference
+llama-cpp-python>=0.2.0
+huggingface-hub>=0.20.0
+
+# Mathematical & Scientific
+datasets>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+sympy>=1.12
+
+# OpenEvolve Framework
+openai>=1.0.0
+
+# Development Tools
+python-dotenv>=1.0.0
+pyyaml>=6.0
+tqdm>=4.65.0
+jupyter>=1.0.0
+matplotlib>=3.7.0
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# System utilities
+psutil>=5.9.0
